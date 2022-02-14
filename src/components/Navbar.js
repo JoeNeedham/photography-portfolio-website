@@ -1,10 +1,26 @@
 import React from 'react'
-import { Nav } from './NavbarStyles'
+import { Nav,
+        NavbarContainer,
+        NavLinks,
+        NavItem,
+        NavMenu
+    } from './NavbarStyles'
+import { data } from '../data/NavbarData'
 
 const Navbar = () => {
     return (
         <Nav>
-            <h1>Hello World</h1>
+            <NavbarContainer>
+                <NavMenu>
+                    {data.map((el, index) => (
+                        <NavItem key={index}>
+                            <NavLinks>
+                                {el.text}
+                            </NavLinks>
+                        </NavItem>
+                    ))}
+                </NavMenu>
+            </NavbarContainer>
         </Nav>
     )
 }
