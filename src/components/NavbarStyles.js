@@ -26,6 +26,14 @@ export const NavbarContainer = styled(Container)`
 	${Container}
 `;
 
+export const Heading = styled.h1`
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    letter-spacing: 7px;
+    font-size: 47px;
+    font-family: 'Kaushan Script', cursive;
+`
 export const NavMenu = styled.ul`
 	display: flex;
     align-items: center;
@@ -36,15 +44,23 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-	height: 80px;
 	cursor: pointer;
 `;
 
 export const NavLinks = styled.span`
-	color: black;
 	display: flex;
 	align-items: center;
 	text-decoration: none;
-	padding: 0.5rem 1rem;
 	height: 100%;
+    color: black;
+    font-size 15px;
+    text-transform: uppercase;
+    font-weight: 525;
+    padding: 0 12px;
+    &:hover {
+        padding: 5px;
+        border-bottom: 1px solid black;
+        transition: $ease;
+        transform: scale(1.1);
+    }
 `;

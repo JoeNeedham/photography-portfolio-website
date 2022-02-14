@@ -1,15 +1,19 @@
 export const data = [
 	{
 		to: '/',
+		text: 'Welcome',
+		id: 'welcome',
+	},
+	{
+		to: '/portfolio',
+		text: 'Portfolio',
+	},
+	{
+		to: '/about',
 		text: 'About',
-		id: 'about',
 	},
-	{
-		to: '/pricing',
-		text: 'Pricing',
-	},
-	{
-		to: '/signup',
-		text: 'Contact',
+    {
+		to: '/bookme',
+		text: 'Book Me',
 	},
 ];

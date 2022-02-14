@@ -3,7 +3,8 @@ import { Nav,
         NavbarContainer,
         NavLinks,
         NavItem,
-        NavMenu
+        NavMenu,
+        Heading
     } from './NavbarStyles'
 import { data } from '../data/NavbarData'
 
@@ -11,6 +12,9 @@ const Navbar = () => {
     return (
         <Nav>
             <NavbarContainer>
+                <Heading>
+                    RIOVIISUALS
+                </Heading>
                 <NavMenu>
                     {data.map((el, index) => (
                         <NavItem key={index}>
