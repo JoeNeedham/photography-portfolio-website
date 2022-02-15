@@ -1,18 +1,20 @@
 import React from "react";
 import { Container } from "../../GlobalStyles";
+import { pictureWallData } from "../../data/PictureWallData";
 import { PhotoGallery,
         PictureColumn,
-        PictureWrapper
+        PictureWrapper,
+        Pictures
 } from "./PictureWallStyles";
 
 const PictureWall = () => {
     return (
     <PhotoGallery>
-        <PictureColumn>
+        {pictureWallData.map((el) => (
             <PictureWrapper>
-                <h2>Pics</h2>
+                <Pictures src={el.img} />
             </PictureWrapper>
-        </PictureColumn>
+        ))}
     </PhotoGallery>
     )
 }

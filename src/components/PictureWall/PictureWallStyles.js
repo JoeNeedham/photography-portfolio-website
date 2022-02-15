@@ -29,6 +29,11 @@ export const PictureColumn = styled.div`
 
 export const PictureWrapper = styled.div`
 	margin-bottom: 1rem;
-	border-radius: 50%;
     margin-left: 2rem;
+`;
+
+export const Pictures = styled.img`
+	margin-right: 1rem;
+    max-width: 100%;
+    max-height: 100%;
 `;
