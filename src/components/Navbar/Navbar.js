@@ -5,8 +5,8 @@ import { Nav,
         NavItem,
         NavMenu,
         Heading
-    } from './NavbarStyles'
-import { data } from '../data/NavbarData'
+    } from '../Navbar/NavbarStyles'
+import { data } from '../../data/NavbarData'
 
 const Navbar = () => {
     return (
