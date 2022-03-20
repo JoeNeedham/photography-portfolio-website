@@ -5,7 +5,6 @@ export const PhotoGallery = styled.div`
 	grid-template-columns: repeat(3, 1fr);
 	margin: 4rem;
     margin-top: 6rem;
-	grid-gap: 2rem;
 
 	@media screen and (max-width: 1100px) {
 		grid-template-columns: repeat(2, 1fr);
@@ -34,6 +33,6 @@ export const PictureWrapper = styled.div`
 
 export const Pictures = styled.img`
 	margin-right: 1rem;
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 103%;
+    max-height: 103%;
 `;

@@ -33,6 +33,7 @@ export const Heading = styled.h1`
     letter-spacing: 7px;
     font-size: 47px;
     font-family: 'Kaushan Script', cursive;
+	margin-left: 20px;
 `
 export const NavMenu = styled.ul`
 	display: flex;

@@ -2,8 +2,8 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 *{
-    box-sizing: border-box;
-    outline: 1px dotted red; 
+    // box-sizing: border-box;
+    // outline: 1px dotted red; 
 
 }
 `;
