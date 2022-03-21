@@ -4,7 +4,7 @@ export const PhotoGallery = styled.div`
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	/* margin: 1rem; */
-    margin-top: 6rem;
+    margin-top: 5rem;
 
 	@media screen and (max-width: 1100px) {
 		grid-template-columns: repeat(2, 1fr);

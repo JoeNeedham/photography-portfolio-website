@@ -51,7 +51,7 @@ export const NavItem = styled.li`
 export const NavLinks = styled.span`
 	display: flex;
 	align-items: center;
-	text-decoration: none;
+	text-decoration: none !important;
 	height: 100%;
     color: black;
     font-size: 15px;

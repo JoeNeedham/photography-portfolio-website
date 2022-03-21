@@ -7,6 +7,7 @@ import { Nav,
         Heading
     } from '../Navbar/NavbarStyles'
 import { data } from '../../data/NavbarData'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
@@ -19,7 +20,9 @@ const Navbar = () => {
                     {data.map((el, index) => (
                         <NavItem key={index}>
                             <NavLinks>
-                                {el.text}
+                                <Link style={{textDecoration: 'none', color: 'black'}} to={el.pathname}>
+                                    {el.text}
+                                </Link>
                             </NavLinks>
                         </NavItem>
                     ))}

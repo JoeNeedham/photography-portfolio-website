@@ -1,15 +1,15 @@
 export const data = [
 	{
-		to: '/',
+		pathname: '/',
 		text: 'Welcome',
 		id: 'welcome',
 	},
 	{
-		to: '/about',
+		pathname: '/about',
 		text: 'About',
 	},
     {
-		to: '/bookme',
+		pathname: '/bookme',
 		text: 'Book Me',
 	},
 ];
