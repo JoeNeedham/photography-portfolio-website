@@ -9,13 +9,15 @@ import { PhotoGallery,
 
 const PictureWall = () => {
     return (
-    <PhotoGallery>
-        {pictureWallData.map((el) => (
-            <PictureWrapper>
-                <Pictures src={el.img} />
-            </PictureWrapper>
-        ))}
-    </PhotoGallery>
+    <Container>
+        <PhotoGallery>
+            {pictureWallData.map((el) => (
+                <PictureWrapper>
+                    <Pictures src={el.img} />
+                </PictureWrapper>
+            ))}
+        </PhotoGallery>
+    </Container>
     )
 }
 

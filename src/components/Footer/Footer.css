@@ -1,0 +1,24 @@
+.footer-container {
+    height: 17.8%;
+    width: 100%;
+    padding: 10px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+
+}
+
+.footer-content {
+    height: 100%;
+    width: 100%;
+    margin-right: auto;
+    margin-left: 85px;
+    overflow: hidden;
+    display: flex;
+}
+
+.fa-brands {
+    margin-right: 7px;
+}
+

@@ -54,7 +54,7 @@ export const NavLinks = styled.span`
 	text-decoration: none;
 	height: 100%;
     color: black;
-    font-size 15px;
+    font-size: 15px;
     text-transform: uppercase;
     font-weight: 525;
     padding: 0 12px;

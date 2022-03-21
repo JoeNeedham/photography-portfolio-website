@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const PhotoGallery = styled.div`
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	margin: 4rem;
+	/* margin: 1rem; */
     margin-top: 6rem;
 
 	@media screen and (max-width: 1100px) {
