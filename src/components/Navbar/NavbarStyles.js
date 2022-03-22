@@ -64,4 +64,6 @@ export const NavLinks = styled.span`
         transition: $ease;
         transform: scale(1.1);
     }
+	@media (max-width: 768px) {
+	}
 `;

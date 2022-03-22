@@ -1,21 +1,61 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './BookMe.css'
+import { db } from '../firestore';
+import {doc, setDoc } from 'firebase/firestore'
 
 const BookMe = () => {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        console.log("working")
+
+        await setDoc(doc(db, 'messages', 'contacts'),
+        {
+            name: name,
+            email: email,
+            message: message,
+        })
+        .then(() => {
+            alert("Message has been submitted");
+        })
+        .catch((error) => {
+            alert(error.message);
+        });
+        setName("");
+        setEmail("");
+        setMessage("");
+    }
+
     return (
         <div className='main-container'>
-        <div className='container'>
-            <form className='form'>
+        <div className='containerr'>
+            <form className='form' onSubmit={handleSubmit} >
                 <h1>Contact Form</h1>
 
                 <label>Name</label>
-                <input placeholder='name' />
+                <input 
+                placeholder='name'
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                />
 
                 <label>Email</label>
-                <input placeholder='Email' />
+                <input
+                placeholder='Email'
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                />
 
                 <label>Message</label>
-                <textarea placeholder='Message'></textarea>
+                <textarea 
+                placeholder='Message'
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                ></textarea>
 
                 <button type='submit'>Submit</button>
             </form>
